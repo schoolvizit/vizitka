@@ -52,26 +52,36 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  
-    &__body {}
+    &__body {
+
+      .btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #71bf44;
+        width: 120px;
+        height: 40px;
+        margin: 20px;
+        transition: 300ms;
+        
+      }
+      
+      .btn:hover {
+        background-color: hsla(98, 49%, 51%, 0.3);
+        border-radius: 50px;
+        background: linear-gradient(hsla(98, 49%, 51%, 0), hsla(98, 49%, 51%, 0.2));
+        width: 160px;
+        margin: 0px;
+        color: #71bf44;
+        font-weight: bold;
+      }
+    }
 }
 
 
-
-
-.btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 20px;
-  text-transform: uppercase;
-  
-  border-bottom: 1px solid #71bf44;
-  width: 120px;
-  height: 40px;
-  margin: 20px 20px;
-}
 
 //======================== footer ========================//
 
@@ -84,8 +94,6 @@ body {
   margin-bottom: 20px;
   height: 100px;
 
-  
-
 		&__name {
       padding-bottom: 15px;
       font-size: 20px;
@@ -93,7 +101,6 @@ body {
 		}
 
 		&__contact {
-
 
       .icon {
         display: inline-flex;
@@ -108,10 +115,7 @@ body {
         opacity: 1;
         color: #71bf44;
         transform: scale(1.5);
-        
       }
-    
     }
-  
 }
 

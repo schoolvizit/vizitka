@@ -226,7 +226,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.btn {
+.nav__body .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -242,7 +242,20 @@ body {
   border-bottom: 1px solid #71bf44;
   width: 120px;
   height: 40px;
-  margin: 20px 20px;
+  margin: 20px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.nav__body .btn:hover {
+  background-color: rgba(114, 191, 69, 0.3);
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(114, 191, 69, 0)), to(rgba(114, 191, 69, 0.2)));
+  background: linear-gradient(rgba(114, 191, 69, 0), rgba(114, 191, 69, 0.2));
+  width: 160px;
+  margin: 0px;
+  color: #71bf44;
+  font-weight: bold;
 }
 
 .footer {
