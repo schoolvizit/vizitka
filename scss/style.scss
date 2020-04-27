@@ -32,12 +32,13 @@ body {
 .header {
   background-color: #222;
   margin-top: 25px;
+  border-bottom: 1px solid #71bf44;
 		&__title {
       font-size: 40px;
       text-transform: uppercase;
       padding: 30px 0px;
       opacity: 0.7;
-		}
+    }
 }
 
 //======================== content ========================//
@@ -64,7 +65,7 @@ body {
         border-bottom: 1px solid #71bf44;
         width: 120px;
         height: 40px;
-        margin: 20px;
+        margin: 0px 20px;
         transition: 300ms;
         
       }
@@ -93,6 +94,7 @@ body {
   background-color: #000;
   margin-bottom: 20px;
   height: 100px;
+  border-top: 1px solid #71bf44;
 
 		&__name {
       padding-bottom: 15px;
