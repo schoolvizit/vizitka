@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  *height: 100%;
+  width: 100%;
+  *font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: 'Cera-100';
+  src: url("../fonts/CeraPro-Thin.eot");
+  src: local("Cera Pro Thin"), local("CeraPro-Thin"), url("../fonts/CeraPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Thin.woff") format("woff"), url("../fonts/CeraPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera-300';
+  src: url("../fonts/CeraPro-Light.eot");
+  src: local("Cera Pro Light"), local("CeraPro-Light"), url("../fonts/CeraPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Light.woff") format("woff"), url("../fonts/CeraPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera-700';
+  src: url("../fonts/CeraPro-Bold.eot");
+  src: local("Cera Pro Bold"), local("CeraPro-Bold"), url("../fonts/CeraPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CeraPro-Bold.woff") format("woff"), url("../fonts/CeraPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?65433166");
+  src: url("../fonts/fontello.eot?65433166#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?65433166") format("woff2"), url("../fonts/fontello.woff?65433166") format("woff"), url("../fonts/fontello.ttf?65433166") format("truetype"), url("../fonts/fontello.svg?65433166#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-phone:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-user:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-picture:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-folder-open:before {
+  content: '\e803';
+}
+
+/* '' */
+.icon-mail-alt:before {
+  content: '\f0e0';
+}
+
+/* '' */
+.icon-vkontakte:before {
+  content: '\f189';
+}
+
+/* '' */
+.icon-leanpub:before {
+  content: '\f212';
+}
+
+/* '' */
+.icon-map:before {
+  content: '\f279';
+}
+
+/* '' */
+body {
+  font-family: 'Cera-100';
+  color: #fff;
+  font-size: 16px;
+  background: #71bf44;
+  text-align: center;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #222;
+  margin-top: 25px;
+}
+
+.header__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 30px 0px;
+  opacity: 0.7;
+}
+
+.nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: #27383d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #71bf44;
+  width: 120px;
+  height: 40px;
+  margin: 20px 20px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+.footer__name {
+  padding-bottom: 15px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.footer__contact .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 25px;
+  padding: 0px 20px;
+  color: #fff;
+  opacity: 0.3;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.footer__contact a, .footer__contact .icon:hover {
+  opacity: 1;
+  color: #71bf44;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}

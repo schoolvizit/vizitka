@@ -1,0 +1,139 @@
+body {
+ background:  #143449;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+h3, span {
+	font-size: 15px;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 0.3rem;
+	text-align: center;
+	color: #a9c9d8;
+}
+
+a {
+	color: #a9c9d8;
+}
+
+a:hover {
+	color: white;
+}
+
+.menu__navig {
+	margin: 0 1rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.row-img1, .row-img2, .row-img3 {
+ display: inline-block;
+ margin: 0 2px;
+}
+
+.img1, .img2, .img-3 {
+ display: inline-block;
+}
+
+
+.btn {
+	margin: 0;
+	padding: 0;
+	margin-top: 0.5rem;
+	border: 2px solid #fff;
+	border-radius: 0px;
+	height: 10rem;
+}
+
+.container_01 {
+	margin-top: 0.5rem; 
+}
+
+
+.header {
+	font-size: 2rem;
+	margin-top: 8rem;
+	color: #a9c9d8;
+}
+
+.row__home {
+	margin-top: 2rem;
+}
+
+.home {
+	font-size: 20px;
+	color: #000;
+	margin-top: 2rem;
+	color: #a9c9d8;
+}
+
+.home:hover {
+	text-decoration: none;
+}
+
+.home:active {
+	color: #000;
+}
+
+
+/*Медиа запросы*/
+
+
+@media screen and (max-width: 992px) {
+	.btn {
+		margin: 0rem auto;
+	}
+
+ .row__home {
+	 margin-top: 2rem; 
+}
+
+ .header {
+		margin-top: 8rem; 
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.btn  {
+		margin-bottom: 0rem;
+	}
+ 
+ .menu__navig {
+ 	margin: 0 auto; 
+ 	margin-bottom: 1rem;
+ }
+	
+	.header {
+		margin-top: 3rem;
+		margin-bottom: 0rem; 
+	}
+ 
+ .row__home {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+ }
+
+}
+
+@media screen and (max-width: 576px) {
+ .home {
+ 	font-size: 15px;
+ }
+ 
+}
+
+
+
+
+
+
+
