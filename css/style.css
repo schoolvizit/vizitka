@@ -210,6 +210,13 @@ body {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 576px) {
+  .header__title {
+    padding: 20px 0px;
+    font-size: 30px;
+  }
+}
+
 .nav {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -258,16 +265,39 @@ body {
   color: #71bf44;
 }
 
+.nav__body .btn:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(114, 191, 69, 0.2)), color-stop(rgba(114, 191, 69, 0)), to(rgba(114, 191, 69, 0.2)));
+  background: linear-gradient(rgba(114, 191, 69, 0.2), rgba(114, 191, 69, 0), rgba(114, 191, 69, 0.2));
+  border: 2px solid #71bf44;
+  font-size: 28px;
+}
+
 @media screen and (max-width: 1070px) {
   .nav__body .btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 40px 0px;
-    width: 200px;
+    width: 250px;
+    background-color: rgba(114, 191, 69, 0.3);
+    border-radius: 50px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(114, 191, 69, 0)), to(rgba(114, 191, 69, 0.2)));
+    background: linear-gradient(rgba(114, 191, 69, 0), rgba(114, 191, 69, 0.2));
   }
   .nav__body .btn:hover {
     width: 100%;
+  }
+  .nav__body :nth-child(1) {
+    margin-top: 0px;
+  }
+  .nav__body :nth-child(5) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav__body .btn {
+    margin: 20px 0px;
   }
   .nav__body :nth-child(1) {
     margin-top: 0px;
@@ -312,4 +342,21 @@ body {
   color: #71bf44;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    height: 70px;
+  }
+  .footer__contact .icon {
+    font-size: 20px;
+  }
+  .footer__contact a, .footer__contact .icon:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .footer__name {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
 }
