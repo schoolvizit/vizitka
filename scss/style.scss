@@ -9,6 +9,8 @@ body {
   background: #71bf44;
   text-align: center;
   
+
+  
 }
 
 .wrapper {
@@ -43,16 +45,17 @@ body {
 
 .nav {
   flex: 1 1 auto;
-  background-color: #27383d;
   display: flex;
   align-items: center;
+  background-image: url(../img/fon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   
-  
-    &__body {
-    
-    }
-   
+    &__body {}
 }
+
 
 
 
