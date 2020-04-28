@@ -220,7 +220,7 @@ body {
   }
 }
 
-.nav {
+.screen {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -258,14 +258,6 @@ body {
   transition: 200ms;
 }
 
-.nav__body :nth-child(1) {
-  margin-left: 0px;
-}
-
-.nav__body :nth-child(5) {
-  margin-right: 0px;
-}
-
 .nav__body .btn:hover {
   background-color: rgba(114, 191, 69, 0.3);
   border-radius: 50px;
@@ -295,9 +287,6 @@ body {
     border-radius: 50px;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(114, 191, 69, 0)), to(rgba(114, 191, 69, 0.2)));
     background: linear-gradient(rgba(114, 191, 69, 0), rgba(114, 191, 69, 0.2));
-  }
-  .nav__body .btn:hover {
-    width: 100%;
   }
   .nav__body :nth-child(1) {
     margin-top: 0px;
