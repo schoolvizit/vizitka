@@ -4,126 +4,63 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Papka</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Vizitka</title>
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/papka.css">
 </head>
 
 <body>
 
-	<div class="container d-flex justify-content-center">
-		<div class="row">
-			<div class="col">
-				<h1 class="header">Образцы ДС/СШ</h1>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__title">
+				<h1>Образцы ДС/СШ</h1>
 			</div>
-		</div>
-	</div>
+		</header>
 
-	<div class="container d-flex justify-content-center">
-		<div class="row row__home">
-			<div class="col"><a href="index.html" class="home">на главную</a></div>
-
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="col">
-			<nav>
-				<ul class="menu d-flex justify-content-center">
-					<li class="menu__navig">
-						<a href="portrait.html" class="home">ПОРТРЕТ</a>
-					</li>
-					<li class="menu__navig">
-						<a href="vignette.html" class="home">ВИНЬЕТКА</a>
-					</li>
-					<!--	<li class="menu__navig">
-								<a href="papka.html" class="home">ПАПКА</a>
-							</li>  -->
-					<li class="menu__navig">
-						<a href="trumo.html" class="home">ТРЮМО</a>
-					</li>
-					<li class="menu__navig">
-						<a href="journal.html" class="home">ЖУРНАЛ</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-
-	<!--Первый блок фото-->
-
-	<div class="container_01">
-		<div class="row row-img1">
-			<div class="col">
-				<div class="popup-gallery">
-					<div class="img1">
-						<a href="img/big/P_001.jpg"><img src="img/small/P_001.jpg" alt="#" class="btn"></a>
+		<div class="mainblock">
+			<div class="mainblock__content">
+				<a href="index.html" class="mainblock__home mainblock__home-btn"></a>
+				<div class="container">
+					<div class="mainblock__row">
+						<div class="mainblock__block-1">
+							<div class="bl1">
+								<a href="img/big/P_001.jpg"><img src="img/small/P_001.jpg" alt="#" class="btn"></a>
+							</div>
+							<div class="bl1">
+								<a href="img/big/P_002.jpg"><img src="img/small/P_002.jpg" alt="#" class="btn"></a>
+							</div>
+							<div class="g">Gjjjjj</div>
+							
+						</div>
+						
 					</div>
-					<div class="img1">
-						<a href="img/big/P_002.jpg"><img src="img/small/P_002.jpg" alt="#" class="btn"></a>
-					</div>
-					<p>Папка-1</p>
+					
 				</div>
 			</div>
-		</div>
-		<div class="row row-img2">
-			<div class="col">
-				<div class="popup-gallery">
-					<div class="img2">
-						<a href="img/big/P_003.jpg"><img src="img/small/P_003.jpg" alt="#" class="btn"></a>
-					</div>
-					<div class="img2">
-						<a href="img/big/P_004.jpg"><img src="img/small/P_004.jpg" alt="#" class="btn"></a>
-					</div>
-					<p>Папка-2</p>
-				</div>
+			<div class="mainblock__image">
+				<img src="#" alt="">
 			</div>
 		</div>
+
+
+		<footer class="footer">
+			<div class="footer__name">
+				<h2>ГАЛИНСКИЙ Андрей Дмитриевич</h2>
+			</div>
+			<div class="footer__contact">
+				<a href="tel:+375292138213" title="+375(29) 213 82 13"><i class="icon icon-phone"></i></a>
+				<a href="mailto:galynski@yahoo.com" title="galynski@yahoo.com"><i class="icon icon-mail-alt"></i></a>
+				<a href="https://vk.com/galynski_foto" title="vk.com/galynski_foto" target="_blank"><i
+						class="icon icon-vkontakte"></i></a>
+			</div>
+		</footer>
 	</div>
 
 
-	<!--Второй блок фото-->
-
-	<div class="container_02">
-		<div class="row row-img1">
-			<div class="col">
-				<div class="popup-gallery">
-					<div class="img1">
-						<a href="img/big/P_005.jpg"><img src="img/small/P_005.jpg" alt="#" class="btn"></a>
-					</div>
-					<div class="img1">
-						<a href="img/big/P_006.jpg"><img src="img/small/P_006.jpg" alt="#" class="btn"></a>
-					</div>
-					<p>Папка-3</p>
-				</div>
-			</div>
-		</div>
-		<div class="row row-img2">
-			<div class="col">
-				<div class="popup-gallery">
-					<div class="img2">
-						<a href="img/big/P_007.jpg"><img src="img/small/P_007.jpg" alt="#" class="btn"></a>
-					</div>
-					<div class="img2">
-						<a href="img/big/P_008.jpg"><img src="img/small/P_008.jpg" alt="#" class="btn"></a>
-					</div>
-					<p>Папка-4</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-	<link rel="stylesheet" href="css/magnific-popup.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script>
-		$('.popup-gallery').magnificPopup({ delegate: 'a', type: 'image', gallery: { enabled: true, } });
-	</script>
-
+	<script src="js/script.js"></script>
 </body>
 
 </html>
