@@ -299,6 +299,14 @@ body {
   margin-bottom: 5px;
 }
 
+@media (max-width: 768px) {
+  .mainblock__block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 15%;
+            flex: 0 1 15%;
+  }
+}
+
 .mainblock__image {
   position: absolute;
   width: 100%;
