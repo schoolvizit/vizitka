@@ -75,8 +75,14 @@ body {
     height: 50px;
     transition: 300ms;
     &:before{
-      content:'\e804';
+      content:'\e834';
       font-family: "fontello";
+      font-size: 30px;
+      animation: spin 5s linear 0s infinite;
+      @keyframes spin {
+        from {transform:rotate(0deg);}
+        to {transform:rotate(360deg);}
+      }
     }
   }
   
@@ -89,6 +95,16 @@ body {
     border: 1px solid #71bf44;
     font-size: 22px;
   }
+
+  .home {
+
+      &__text {
+        color: #71bf44;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+  }
+
 
   &__content {
     position: relative;
@@ -109,7 +125,6 @@ body {
     flex-wrap: wrap;
     margin: -20px -5px 0 -5px;
     padding: 0 0 50px 0;
-    
   }
 
   &__block {
@@ -164,8 +179,8 @@ body {
         display: inline-flex;
         font-size: 25px;
         padding: 0 20px;
-        color: #fff;
-        opacity: 0.3;
+        color: #71bf44;
+        opacity: 0.5;
         transition: 300ms;
       }
 
