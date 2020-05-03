@@ -105,51 +105,28 @@ body {
 
   &__row {
     display: flex;
-    
     justify-content: center;
     flex-wrap: wrap;
     margin: -20px -5px 0 -5px;
     padding: 0 0 50px 0;
-    
   }
 
-  &__block-1, &__block-2, &__block-3, &__block-4 {
-    flex: 0 1 14.28%;
-    
-   
-    padding: 10px 5px;
+  &__big {
+    display: flex;
+    margin: 5px 10px;
 
-   
     
-
+  @media screen and (max-width: 539px) {
+    display: block;
     .btn {
-      border: 1px solid #71bf44;
-      margin-bottom: 5px;
+      margin: 5px 0;
     }
-
-    @media (max-width: 840px) {
-      flex: 0 1 20%;
-    }
-    
+  }
   }
 
-  .mainblock {
-
-		&__row {
-		}
-
-		&__block-1 {
-		}
-}
-.bl1 {
-}
-.btn {
-}
-
-
-
-
-
+  &__text {
+    margin-bottom: 20px;
+  }
 
   &__image {
     position: absolute;
@@ -163,6 +140,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+.btn {
+  margin: 0 5px;
+  border: 1px solid #71bf44;
 }
 
 
@@ -206,7 +188,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer {
     height: 70px;
     border-bottom: 10px solid #71bf44;
