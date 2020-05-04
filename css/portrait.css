@@ -373,6 +373,7 @@ body {
   background-color: #000;
   border-bottom: 20px solid #71bf44;
   height: 100px;
+  z-index: 1;
 }
 
 .footer__name {
