@@ -54,7 +54,7 @@ body {
 
 
 .mainblock {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -62,9 +62,6 @@ body {
   
   &__content {
     z-index: 1;
-  }
-
-  &__nav {
   }
 
   &__navbody {

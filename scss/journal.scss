@@ -108,13 +108,19 @@ body {
     }
   }
 
+  &__info {
+    display: inline-flex;
+    max-width: 50%;
+    margin: 40px 0px 0px 0px;
+    font-size: 18px;
+  }
+
   &__row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: -20px -5px 0 -5px;
+    margin: -70px -5px 0 -5px;
     padding: 0 0 50px 0;
-    
   }
 
   &__block {

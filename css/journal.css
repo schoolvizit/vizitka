@@ -295,6 +295,15 @@ body {
           justify-content: center;
 }
 
+.mainblock__info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  max-width: 50%;
+  margin: 40px 0px 0px 0px;
+  font-size: 18px;
+}
+
 .mainblock__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,7 +313,7 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -20px -5px 0 -5px;
+  margin: -70px -5px 0 -5px;
   padding: 0 0 50px 0;
 }
 

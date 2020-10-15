@@ -207,8 +207,8 @@ body {
 
 .mainblock {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
